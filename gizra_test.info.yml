@@ -1,0 +1,6 @@
+name: Gizra Test
+description: Outputs personal invitation to subscribe to group
+type: module
+core: 8.x
+dependencies:
+  - og:og
