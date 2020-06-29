@@ -16,7 +16,7 @@ class GroupPersonalSubscribeTest extends ExistingSiteBase {
     $test_user = $this->createUser([], 'Chipmunk', FALSE);
     $node = $this->createNode([
       'title' => 'Pony',
-      'type' => 'school',
+      'type' => 'group',
       'uid' => 1,
     ]);
     $node->setPublished()->save();

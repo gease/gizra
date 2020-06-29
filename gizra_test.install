@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * @file Functions to run on muodule install, uninstall and updates.
+ */
+
+function gizra_test_install() {
+  \Drupal::service('og.group_type_manager')->addGroup('node', 'group');
+  \Drupal::configFactory()->getEditable('og.og_role.node-group-non-member')
+    ->set('permissions', ['subscribe without approval'])->save();
+  drupal_flush_all_caches();
+}
